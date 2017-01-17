@@ -1,0 +1,7 @@
+Stuff to remember:
+
+
+
+- difference between px, dip, dp, sp: http://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dp-dip-and-sp-on-android
+- static methods do not need an object generation
+
