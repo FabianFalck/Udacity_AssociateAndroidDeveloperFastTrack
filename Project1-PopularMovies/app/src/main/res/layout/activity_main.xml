@@ -8,6 +8,7 @@
     grid:columnCount="4">
     <Button android:layout_width="0dp"
         style="?buttonStyle"
+        android:id="@+id/button"
         android:layout_height="0dp"
         android:text="-1"
         grid:layout_columnWeight="1"
