@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mSearchBoxEditText;
     // TODO (27) Create a TextView variable called mUrlDisplayTextView
     // TODO (28) Create a TextView variable called mSearchResultsTextView
-    TextView mURLDisplayTextView;
+    TextView mUrlDisplayTextView;
     TextView mSearchResultsTextView;
 
     @Override
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mSearchBoxEditText = (EditText) findViewById(R.id.et_search_box);
         // TODO (30) Use findViewById to get a reference to mUrlDisplayTextView
         // TODO (31) Use findViewById to get a reference to mSearchResultsTextView
-        mURLDisplayTextView = (TextView) findViewById(R.id.tv_url_display);
-        mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
+        mUrlDisplayTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
+        
     }
 }

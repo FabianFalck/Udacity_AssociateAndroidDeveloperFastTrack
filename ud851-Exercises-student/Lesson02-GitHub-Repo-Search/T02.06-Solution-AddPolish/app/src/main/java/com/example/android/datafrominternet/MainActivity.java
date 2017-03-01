@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         String githubQuery = mSearchBoxEditText.getText().toString();
         URL githubSearchUrl = NetworkUtils.buildUrl(githubQuery);
         mUrlDisplayTextView.setText(githubSearchUrl.toString());
-        new GithubQueryTask().execute(githubSearchUrl); //async task executed
+        new GithubQueryTask().execute(githubSearchUrl);
     }
 
     // COMPLETED (14) Create a method called showJsonDataView to show the data and hide the error
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemThatWasClickedId = item.getItemId();
         if (itemThatWasClickedId == R.id.action_search) {
-            makeGithubSearchQuery(); //here the background thread is actually started (by creating the object)
+            makeGithubSearchQuery();
             return true;
         }
         return super.onOptionsItemSelected(item);

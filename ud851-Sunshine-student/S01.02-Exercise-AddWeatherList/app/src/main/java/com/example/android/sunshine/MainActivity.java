@@ -19,31 +19,23 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.ListIterator;
-
-
 public class MainActivity extends AppCompatActivity {
 
     // TODO (1) Create a field to store the weather display TextView
-    TextView weatherDisplay;
+    TextView display;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forecast);
 
         // TODO (2) Use findViewById to get a reference to the weather display TextView
-        TextView weatherDisplay = (TextView) findViewById(R.id.tv_weather_data);
+        display = (TextView) findViewById(R.id.tv_weather_data);
         // TODO (3) Create an array of Strings that contain fake weather data
-        ArrayList<String> fake = new ArrayList<String>();
-        Collections.addAll(fake, "sunshine", "rain", "nothing");
-        Iterator<String> fakeIter = fake.iterator();
-        String currentItem = fakeIter.next();
-        while(currentItem != null){
-            weatherDisplay.append(currentItem + "\n");
-        }
+        String[] weather_array = {"Fake1", "Fake2", "Fake3"};
         // TODO (4) Append each String from the fake weather data array to the TextView
+        for(String weather:weather_array){
+            display.append(weather + "\n\n\n");
+        }
     }
 }
