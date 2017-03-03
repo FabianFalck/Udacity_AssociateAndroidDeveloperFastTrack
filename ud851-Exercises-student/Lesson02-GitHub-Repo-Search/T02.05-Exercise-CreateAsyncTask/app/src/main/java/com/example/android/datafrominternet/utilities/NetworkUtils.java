@@ -72,7 +72,7 @@ public class NetworkUtils {
      */
     public static String getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-        try {
+        try { //no catch here --> is now done in the AsyncTask
             InputStream in = urlConnection.getInputStream();
 
             Scanner scanner = new Scanner(in);
