@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 return simpleJsonWeatherData;
 
             } catch (Exception e) {
-                e.printStackTrace();
+                e.printStackTrace();<
                 return null;
             }
         }
